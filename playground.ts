@@ -1,6 +1,8 @@
 import { initialize, textToText } from "sdk";
 import { config } from "dotenv";
 
+import { languages } from "./src/languages";
+
 config({});
 
 const auth = initialize({
@@ -28,5 +30,3 @@ const run = async () => {
  * { source: 'More data', target: 'अधिक जानकारी' }
  * ]
  */
-
-run().catch(console.error);
