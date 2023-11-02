@@ -14,7 +14,15 @@
     "playground.ts"
   ],
   "keywords": [],
-  "author": "",
+  "author": "0xTender",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xTender/bhashini-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/0xTender/bhashini-sdk/issues"
+  },
+  "homepage": "https://github.com/0xTender/bhashini-sdk#readme",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.5",
