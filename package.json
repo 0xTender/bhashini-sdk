@@ -1,12 +1,18 @@
 {
   "name": "@0xtender/bhashini-sdk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "dist/*",
+    "package.json",
+    "README.md",
+    "playground.ts"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
