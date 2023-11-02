@@ -1,6 +1,6 @@
 {
   "name": "@0xtender/bhashini-sdk",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.5",
+    "dotenv": "^16.3.1",
     "rollup": "^4.2.0",
     "rollup-plugin-dts": "^6.1.0",
     "tslib": "^2.6.2",

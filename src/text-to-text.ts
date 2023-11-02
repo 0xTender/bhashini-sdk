@@ -8,7 +8,7 @@ export const textToText = async (
     sourceLanguage,
     targetLanguage,
   }: {
-    text: string;
+    text: string[];
     sourceLanguage: string;
     targetLanguage: string;
   },
@@ -49,11 +49,7 @@ export const textToText = async (
           },
         ],
         inputData: {
-          input: [
-            {
-              source: text,
-            },
-          ],
+          input: text.map((t) => ({ source: t })),
         },
       }),
       headers: {
@@ -75,11 +71,10 @@ export const textToText = async (
   const data = (await response.json()) as {
     pipelineResponse: [
       {
-        taskType: "translation";
         output: { source: string; target: string }[];
       }
     ];
   };
 
-  return data;
+  return data.pipelineResponse[0];
 };
