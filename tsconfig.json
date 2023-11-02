@@ -22,7 +22,9 @@
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "baseUrl": ".",
-    "declaration": true
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "dist/dts"
   },
   "exclude": ["node_modules"],
   "include": ["./src/**/*.ts", "rollup.config.ts"]
