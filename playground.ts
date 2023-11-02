@@ -1,4 +1,4 @@
-import { initialize, configure, textToText } from "sdk";
+import { initialize, textToText } from "sdk";
 import { config } from "dotenv";
 
 config({});
@@ -10,17 +10,23 @@ const auth = initialize({
   api_key: process.env.BHASHINI_API_KEY!,
   pipeline_id: process.env.BHASHINI_PIPELINE_ID!,
 });
+
 const run = async () => {
-  console.log(
-    await textToText(
-      {
-        text: ["Some Text", "More data"],
-        sourceLanguage: "en",
-        targetLanguage: "hi",
-      },
-      auth
-    )
+  const data = await textToText(
+    {
+      text: ["Some Text", "More data"],
+      sourceLanguage: "en",
+      targetLanguage: "hi",
+    },
+    auth
   );
+  console.log(data.output);
 };
+/** output
+ * [
+ * { source: 'Some Text', target: 'कुछ पाठ' },
+ * { source: 'More data', target: 'अधिक जानकारी' }
+ * ]
+ */
 
 run().catch(console.error);
