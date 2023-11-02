@@ -1,8 +1,10 @@
 # bhashini-sdk
 
-import { initialize, textToText } from "sdk";
 
 ```ts
+
+import { initialize, textToText } from "sdk";
+
 
 const auth = initialize({
   meity_config_url: process.env.BHASHINI_MEITY_CONFIG_URL!,
