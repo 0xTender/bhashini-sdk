@@ -1,12 +1,11 @@
 {
   "name": "@0xtender/bhashini-sdk",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm build && npm publish"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
     "dist/*",
@@ -30,6 +29,7 @@
     "dotenv": "^16.3.1",
     "rollup": "^4.2.0",
     "rollup-plugin-dts": "^6.1.0",
+    "sdk": "npm:@0xtender/bhashini-sdk@^0.0.3",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2"
   }

@@ -17,6 +17,9 @@ devDependencies:
   rollup-plugin-dts:
     specifier: ^6.1.0
     version: 6.1.0(rollup@4.2.0)(typescript@5.2.2)
+  sdk:
+    specifier: npm:@0xtender/bhashini-sdk@^0.0.3
+    version: /@0xtender/bhashini-sdk@0.0.3
   tslib:
     specifier: ^2.6.2
     version: 2.6.2
@@ -25,6 +28,10 @@ devDependencies:
     version: 5.2.2
 
 packages:
+
+  /@0xtender/bhashini-sdk@0.0.3:
+    resolution: {integrity: sha512-uoswHp1jDWWmXMaWrFVMsrDNAZp5T6hqtDfJF6/GNvZ9F2mJJy2PVnQ5EmiXH0OqFucAsfdUtpde0npZBPzB2A==}
+    dev: true
 
   /@babel/code-frame@7.22.13:
     resolution: {integrity: sha512-XktuhWlJ5g+3TJXc5upd9Ks1HutSArik6jf2eAjYFyIOf4ej3RN+184cZbzDvbPnuTJIUhPKKJE3cIsYTiAT3w==}
