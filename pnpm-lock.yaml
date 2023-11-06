@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  '@0xtender/bhashini-sdk':
+    specifier: ^0.0.5
+    version: 0.0.5
+
 devDependencies:
   '@rollup/plugin-typescript':
     specifier: ^11.1.5
@@ -35,6 +40,10 @@ packages:
   /@0xtender/bhashini-sdk@0.0.3:
     resolution: {integrity: sha512-uoswHp1jDWWmXMaWrFVMsrDNAZp5T6hqtDfJF6/GNvZ9F2mJJy2PVnQ5EmiXH0OqFucAsfdUtpde0npZBPzB2A==}
     dev: true
+
+  /@0xtender/bhashini-sdk@0.0.5:
+    resolution: {integrity: sha512-GOyXyDqi7FoI3xRiqcDp/e3e5fYq2YCZO/bAN1/hDj+Get4J/1ZnNa+EF/0xMlGXkXEyTnprd4F8g2VnLJAs+A==}
+    dev: false
 
   /@babel/code-frame@7.22.13:
     resolution: {integrity: sha512-XktuhWlJ5g+3TJXc5upd9Ks1HutSArik6jf2eAjYFyIOf4ej3RN+184cZbzDvbPnuTJIUhPKKJE3cIsYTiAT3w==}

@@ -33,5 +33,8 @@
     "sdk": "npm:@0xtender/bhashini-sdk@^0.0.3",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@0xtender/bhashini-sdk": "^0.0.5"
   }
 }
