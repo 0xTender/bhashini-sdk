@@ -13,3 +13,4 @@ export const initialize = (options: InitializationOptions): Authorization => {
 export * from "./configure";
 export * from "./text-to-text";
 export type * from "./types";
+export * from "./languages";
