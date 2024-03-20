@@ -14,3 +14,4 @@ export * from "./configure";
 export * from "./text-to-text";
 export type * from "./types";
 export * from "./languages";
+export * from "./detect-speech";

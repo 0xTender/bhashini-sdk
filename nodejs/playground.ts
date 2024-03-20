@@ -1,7 +1,8 @@
-import { initialize, textToText } from "sdk";
+import { readFileSync } from "fs";
+import { initialize, textToText, detectSpeech } from "./src";
 import { config } from "dotenv";
-
-import { languages } from "./src/languages";
+import { join } from "path";
+import { tmpdir } from "os";
 
 config({});
 
@@ -14,11 +15,12 @@ const auth = initialize({
 });
 
 const run = async () => {
-  const data = await textToText(
+  const audio = readFileSync(join(`${"1710912938182"}.wav`)).toString("base64");
+
+  const data = await detectSpeech(
     {
-      text: ["Some Text", "More data"],
+      audio: [audio, audio],
       sourceLanguage: "en",
-      targetLanguage: "hi",
     },
     auth
   );
@@ -30,3 +32,5 @@ const run = async () => {
  * { source: 'More data', target: 'अधिक जानकारी' }
  * ]
  */
+
+run().catch(console.error);
